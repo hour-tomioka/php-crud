@@ -1,0 +1,145 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: 'DM Sans', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.container{
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 520px;
+    text-align: center;
+    place-items: center;
+}
+
+.card{
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding:3rem 3rem 3rem 3rem;
+    box-shadow: 0 24px 80px rgba(0,0,0,0.4);
+}
+
+.btn{
+    gap:20px;
+    display: flex;
+
+}
+
+.btnSubmit{
+    width: 100px;
+    height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #007BFF;
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+}
+
+.btnBack{
+    width: 120px;
+    height: 30px;
+    text-align: center;
+    font-family: 'Syne', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    border: none;
+}
+
+.field{
+    margin-bottom: 1.25rem;
+}
+
+.btnBack a {
+    text-decoration: none;
+    color: black;
+}
+
+@keyframes move{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(10deg);
+    }
+}
+
+.btnSubmit:hover {
+    transform: scale(1.10);
+}
+x
+.btnSubmit:active {
+    transform: scale(0.98);
+}
+
+.btnBack:hover {
+    transform: scale(1.10);
+}
+
+.btnBack:active {
+    transform: scale(0.98);
+}
+
+textarea {
+    resize: vertical;
+    min-height: 110px;
+    line-height: 1.6;
+}
+
+label {
+    display: block;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    margin-bottom: 0.5rem;
+}
+
+
+
+input[type="text"],
+input[type="number"],
+textarea {
+    width: 100%;
+    border: 1px solid gray;
+    border-radius: 8px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 0.975rem;
+    padding: 0.5rem;
+    outline: none;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+h2{
+    font-family: 'Syne', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+/* product list */
+
