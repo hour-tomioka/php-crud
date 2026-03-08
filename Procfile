@@ -1,1 +1,4 @@
-web: php -S 0.0.0.0:$PORT -t .
+web: php -S 0.0.0.0:${PORT:-8080}
+
+
+
